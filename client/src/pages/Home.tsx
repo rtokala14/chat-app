@@ -39,6 +39,7 @@ function Home() {
 
 function Channels({ loadedChannels }: ChannelListMessengerProps) {
   const navigate = useNavigate();
+  const { logout } = useLoggedInAuth();
   const { setActiveChannel, channel: activeChannel } = useChatContext();
 
   return (
