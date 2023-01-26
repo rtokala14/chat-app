@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import Input from "../components/Input";
+import Button from "../components/Button";
 
 function SignUp() {
   const usernameRef = useRef<HTMLInputElement>(null);
@@ -16,6 +17,9 @@ function SignUp() {
         <Input id="name" required ref={nameRef} />
         <label htmlFor="imageUrl">Image Url</label>
         <Input id="imageUrl" type={"url"} ref={imageUrlRef} />
+        <Button className=" col-span-full" type="submit">
+          Sign Up
+        </Button>
       </form>
     </>
   );
