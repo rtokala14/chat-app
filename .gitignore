@@ -1,5 +1,7 @@
 # Server Node Modules
 /server/node_modules/
 
+/server/dist/
+
 # Client Node Modules
 /client/node_modules/
